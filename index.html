@@ -15,10 +15,10 @@
         ========================================================== */
     :root {
       --theme-dark: #3a2e12;      /* Rich Dark Bronze/Gold for main text */
-      --theme-main: #b8860b;      /* Rich Gold for buttons/icons */
-      --theme-accent: #ffd700;    /* Bright Gold for borders & glitters */
-      --theme-light: #fffdf0;     /* Soft warm golden cream for backgrounds */
-      --theme-gradient: linear-gradient(135deg, #ffd700, #b8860b);
+      --theme-main: #800000;      /* Rich Gold for buttons/icons */
+      --theme-accent: #800000;    /* Bright Gold for borders & glitters */
+      --theme-light: #e7955e;     /* Soft warm golden cream for backgrounds */
+      --theme-gradient: linear-gradient(135deg, #800000, #800000);
     }
 
     * {
@@ -155,7 +155,7 @@
       justify-content: center;
       color: #fff;
       font-size: 15px;
-      box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.363);
     }
 
     @keyframes bounceArrow {
@@ -269,7 +269,7 @@
       height: 220px;
       margin: 10px auto;
       clip-path: path('M125,210 C125,210 15,140 15,75 C15,35 45,10 80,10 C105,10 120,25 125,40 C130,25 145,10 170,10 C205,10 235,35 235,75 C235,140 125,210 125,210 Z');
-      background: #fff;
+      background: #800000;
       box-shadow: 0 10px 30px rgba(58, 46, 18, 0.3);
     }
 
@@ -886,10 +886,10 @@
     function renderHeartGlitterCover() {
       // Golden Metallic & Glass Shimmer Gradient
       const grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-      grad.addColorStop(0, '#B8860B'); // Dark Goldenrod
-      grad.addColorStop(0.3, '#FFD700'); // Gold
-      grad.addColorStop(0.7, '#FFF8DC'); // Cornsilk (Glass highlight)
-      grad.addColorStop(1, '#DAA520'); // Goldenrod
+      grad.addColorStop(0, '#5C0002'); // Dark Goldenrod
+      grad.addColorStop(0.3, '#8B0000'); // Gold
+      grad.addColorStop(0.7, '#FFC0CB'); // Cornsilk (Glass highlight)
+      grad.addColorStop(1, '#800000'); // Goldenrod
       ctx.fillStyle = grad;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       
